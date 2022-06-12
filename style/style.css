@@ -1,0 +1,347 @@
+/* ---------- Basic styles ---------- */
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Basic styles ---------- */
+body, html {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  position: relative;
+}
+
+.container {
+  max-width: 1172px;
+  margin: 0 auto;
+}
+
+/* ---------- contact header ---------- */
+/* ---------- ---------- ---------- */
+/* ---------- Header ---------- */
+.header__contact {
+  display: flex;
+  background: #65256F;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 3.8rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+.header__contact_number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10.5rem;
+}
+.header__contact_number p {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #fff;
+  margin-right: 1.8rem;
+}
+.header__contact_number a {
+  font-weight: 500;
+  color: #FBC70E;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+.header__contact_slogan {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #FFB700;
+  padding-left: 10.5rem;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav_links a {
+  line-height: 1.7rem;
+  font-size: 1.4rem;
+  color: #2A2828;
+  font-weight: 600;
+}
+.header__nav_links a:not(:last-child) {
+  margin-right: 4rem;
+}
+.header__nav_links_button {
+  margin-left: 5.3rem;
+}
+.header__nav_links_button li {
+  color: #fff;
+}
+
+.get_price {
+  padding: 1.3rem 2.9rem;
+  color: #FFFFFF;
+  background: #65256F;
+  border-radius: 0.3rem;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Head section ---------- */
+.head-section {
+  position: relative;
+  color: #fff;
+}
+.head-section-bg_image img {
+  position: absolute;
+  width: 100%;
+  max-height: 76.8rem;
+  top: 0;
+  left: 0;
+  filter: brightness(45%);
+  z-index: -100;
+}
+.head-section_box {
+  padding: 19rem 0;
+  display: grid;
+  grid-template-columns: 5fr 0.5fr;
+  align-items: center;
+}
+.head-section__title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 7.7rem;
+  max-width: 69.6rem;
+}
+.head-section__title:after {
+  content: "";
+  background: #fff;
+  height: 0.4rem;
+  width: 5.2rem;
+  display: block;
+  margin: 1.1rem 0 2.9rem 0;
+}
+.head-section__subtitle {
+  display: block;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  margin-bottom: 4.7rem;
+  max-width: 67.15rem;
+  font-weight: 400;
+}
+.head-section__button {
+  padding: 2rem 8rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #000;
+  background: #FFC957;
+  border-radius: 0.3rem;
+  border: none;
+}
+.head-section__right {
+  display: flex;
+  flex-direction: column;
+}
+.head-section__right a:not(:last-child) {
+  margin-bottom: 5.7rem;
+}
+
+.section__title h2 {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.section__title h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #bebebe;
+  top: 50%;
+  right: 0;
+  height: 0.2rem;
+  width: 37%;
+}
+.section__title h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #bebebe;
+  top: 50%;
+  left: 0;
+  height: 0.2rem;
+  width: 37%;
+}
+.section__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.section__button button {
+  padding: 1.5rem 13.5rem;
+  background: #65256F;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  border: none;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Services ---------- */
+.main section:not(:first-child) {
+  margin-top: 6rem;
+}
+
+.services__content_card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.services__content_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.services__content_card-img {
+  max-width: 18.4rem;
+  margin-bottom: 2rem;
+}
+.services__content_card-title {
+  max-width: 22rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #000;
+  margin-bottom: 0.8rem;
+}
+.services__content_card-desc {
+  max-width: 25rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #5e5e5e;
+  margin-bottom: 5.9rem;
+}
+.services__content_card-tel {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #753ed6;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Works ---------- */
+.works__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.works__cards_card {
+  max-width: 36.8rem;
+  border-radius: 0.3rem;
+  position: relative;
+}
+.works__cards_card-img {
+  filter: brightness(50%);
+}
+.works__cards_card-name {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 100;
+  color: #fff;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Production ---------- */
+.production__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.4rem;
+}
+.production__cards_card {
+  max-width: 36.8rem;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Prices ---------- */
+.prices__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.prices__cards_card-img {
+  margin-bottom: 1rem;
+}
+.prices__cards_card-desc {
+  color: #5A5858;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 0.6rem;
+  max-width: 100%;
+}
+.prices__cards_card-price {
+  color: #4C1F8C;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Clients ---------- */
+.clients__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3.2rem;
+}
+
+/* ---------- ---------- ---------- */
+/* ---------- Team ---------- */
+.team__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+.team__cards_card-img {
+  margin-bottom: 2.4rem;
+}
+.team__cards_card-name {
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.team__cards_card-role {
+  color: #6F6C6C;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+/* ---------- ---------- ---------- */
+
+/*# sourceMappingURL=style.css.map */
